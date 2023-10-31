@@ -62,29 +62,7 @@ namespace mailService.Services {
                 #endregion
 
                 #region Send Mail
-
-                // using var smtp = new SmtpClient();
-                // if (_settings.UseOAuth)
-                // {
-                //     await smtp.ConnectAsync(_settings.Host, _settings.Port, SecureSocketOptions.StartTls, ct);
-                //     await smtp.AuthenticateAsync(new SaslMechanismOAuth2(_settings.UserName, _settings.AccessToken), ct);
-                // }
-                // else
-                // {
-                //     if (_settings.UseSSL)
-                //     {
-                //         await smtp.ConnectAsync(_settings.Host, _settings.Port, SecureSocketOptions.SslOnConnect, ct);
-                //     }
-                //     else if (_settings.UseStartTls)
-                //     {
-                //         await smtp.ConnectAsync(_settings.Host, _settings.Port, SecureSocketOptions.StartTls, ct);
-                //     }
-                //
-                //     await smtp.AuthenticateAsync(_settings.UserName, _settings.Password, ct);
-                // }
-
-                // await smtp.SendAsync(mail, ct);
-                // await smtp.DisconnectAsync(true, ct);
+                
                 using (var client = new SmtpClient()) {
                     try {
                         await client.ConnectAsync(_settings.Host, _settings.Port, SecureSocketOptions.SslOnConnect);
