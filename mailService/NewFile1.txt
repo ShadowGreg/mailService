@@ -1,0 +1,25 @@
+﻿//мой паролт bp5cymZkU-8YYcNDamnUonhuz1mR4H
+// сгенерированный ugsrrrbmxgwylbqb
+
+
+Тестовые данные для отправки почты
+{
+  "to": [
+    "shadow-greg@yandex.ru"
+  ],
+  "bcc": [
+    "gregosetrov@yandex.ru"
+  ],
+  "cc": [
+    "gregosetrov@yandex.ru"
+  ],
+  "from": "gregosetrov@yandex.ru",
+  "displayName": "greg",
+  "replyTo": "",
+  "replyToName": "string",
+  "subject": "string",
+  "body": "string"
+}
+
+
+https://blog.christian-schou.dk/send-emails-with-asp-net-core-with-mailkit/
