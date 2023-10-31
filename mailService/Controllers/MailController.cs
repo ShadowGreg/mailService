@@ -16,7 +16,7 @@ public class MailController: ControllerBase {
     [HttpPost("sendmail")]
     public async Task<IActionResult> SendMailAsync(MailData mailData)
     {
-        bool result = await _mail.SendAsync(mailData, new CancellationToken());
+        bool result = await _mail.SendAsync(mailData);
 
         if (result)
         {

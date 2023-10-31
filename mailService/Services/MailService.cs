@@ -16,7 +16,7 @@ namespace mailService.Services {
             _settings = settings.Value;
         }
 
-        public async Task<bool> SendAsync(MailData mailData, CancellationToken ct = default) {
+        public async Task<bool> SendAsync(MailData mailData) {
             try {
                 // Initialize a new instance of the MimeKit.MimeMessage class
                 var mail = new MimeMessage();
