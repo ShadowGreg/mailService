@@ -76,7 +76,6 @@ namespace mailService.Services {
                     }
                     finally {
                         await client.DisconnectAsync(true);
-                        client.Dispose();
                     }
                 }
 
